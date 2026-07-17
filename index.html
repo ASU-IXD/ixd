@@ -1351,7 +1351,7 @@
 
         @media (max-width:760px) {
             .roadmap::before {
-                left: 20px;
+                left: 25px;
             }
         }
 
@@ -1362,13 +1362,6 @@
             align-items: start;
             position: relative;
             margin-bottom: 8px;
-        }
-
-        @media (max-width:760px) {
-            .road-step {
-                grid-template-columns: 20px 1fr;
-                padding-left: 0;
-            }
         }
 
         .road-node {
@@ -1387,14 +1380,54 @@
             box-shadow: 0 0 24px rgba(242, 193, 78, 0.35);
             position: relative;
             z-index: 1;
+            flex-shrink: 0;
         }
 
+        /* --- Mobile roadmap: each step has 3 source divs (left-card, node, right-card).
+           The empty one is truly empty, so :empty + order lets us always show
+           [node][card] in a single row without touching the JS/markup. --- */
         @media (max-width:760px) {
+            .road-step {
+                display: flex;
+                align-items: flex-start;
+                gap: 14px;
+                padding-left: 0;
+                margin-bottom: 22px;
+            }
+
+            .road-step > div:empty {
+                display: none;
+            }
+
+            .road-step > div:not(:empty):not(.road-node) {
+                flex: 1 1 auto;
+                min-width: 0;
+            }
+
             .road-node {
-                width: 40px;
-                height: 40px;
-                margin: 6px 0 0;
-                font-size: 12px;
+                order: -1;
+                width: 42px;
+                height: 42px;
+                margin: 2px 0 0;
+                font-size: 12.5px;
+            }
+
+            .road-card {
+                padding: 20px;
+            }
+
+            .road-detail-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width:380px) {
+            .road-step {
+                gap: 10px;
+            }
+
+            .road-card {
+                padding: 16px;
             }
         }
 
