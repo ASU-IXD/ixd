@@ -672,6 +672,28 @@
             margin-top: 4px;
         }
 
+               .logo-card .lm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-card .lm img {
+            height: 30px;
+            width: auto;
+            max-width: 110px;
+            object-fit: contain;
+        }
+
+        .logo-card .lm span {
+            font-family: var(--font-mono);
+            font-weight: 500;
+            font-size: 11px;
+            letter-spacing: 0.06em;
+            color: var(--muted);
+        }
+
         .industries-row {
             display: flex;
             flex-wrap: wrap;
@@ -2262,26 +2284,26 @@
            ============================================================ */
 
         const logosData = [
-            ["NVIDIA", "GPU + Omniverse", "https://www.nvidia.com"],
-            ["Apple", "Spatial computing", "https://www.apple.com"],
-            ["Autodesk", "Design software", "https://www.autodesk.com"],
-            ["Epic Games", "Unreal Engine", "https://www.epicgames.com"],
-            ["Unity", "Real-time 3D", "https://unity.com"],
-            ["Pixar", "Animation studio", "https://www.pixar.com"],
-            ["Disney", "Entertainment", "https://www.disney.com"],
-            ["Industrial Light & Magic", "VFX studio", "https://www.ilm.com"],
-            ["Weta FX", "VFX studio", "https://www.wetafx.co.nz"],
-            ["Adobe", "Creative tools", "https://www.adobe.com"],
-            ["Meta", "XR platforms", "https://www.meta.com"],
-            ["Microsoft", "Cloud + mixed reality", "https://www.microsoft.com"],
-            ["Google", "AI + AR", "https://www.google.com"],
-            ["Amazon", "Cloud infrastructure", "https://www.amazon.com"],
-            ["Bentley Systems", "Infrastructure twins", "https://www.bentley.com"],
-            ["Siemens", "Industrial twins", "https://www.siemens.com"],
-            ["Tesla", "Automotive + robotics", "https://www.tesla.com"],
-            ["BMW", "Automotive design", "https://www.bmw.com"],
-            ["Boston Dynamics", "Robotics", "https://www.bostondynamics.com"],
-            ["NASA JPL", "Space simulation", "https://www.jpl.nasa.gov"]
+            ["NVIDIA", "GPU + Omniverse", "https://www.nvidia.com", "nvidia", "76b900"],
+            ["Apple", "Spatial computing", "https://www.apple.com", "apple", "d8dee8"],
+            ["Autodesk", "Design software", "https://www.autodesk.com", "autodesk", "d8dee8"],
+            ["Epic Games", "Unreal Engine", "https://www.epicgames.com", "epicgames", "d8dee8"],
+            ["Unity", "Real-time 3D", "https://unity.com", "unity", "ffffff"],
+            ["Pixar", "Animation studio", "https://www.pixar.com", null, null],
+            ["Disney", "Entertainment", "https://www.disney.com", null, null],
+            ["Industrial Light & Magic", "VFX studio", "https://www.ilm.com", null, null],
+            ["Weta FX", "VFX studio", "https://www.wetafx.co.nz", null, null],
+            ["Adobe", "Creative tools", "https://www.adobe.com", null, null],
+            ["Meta", "XR platforms", "https://www.meta.com", "meta", "0467df"],
+            ["Microsoft", "Cloud + mixed reality", "https://www.microsoft.com", null, null],
+            ["Google", "AI + AR", "https://www.google.com", "google", "4285f4"],
+            ["Amazon", "Cloud infrastructure", "https://www.amazon.com", null, null],
+            ["Bentley Systems", "Infrastructure twins", "https://www.bentley.com", null, null],
+            ["Siemens", "Industrial twins", "https://www.siemens.com", "siemens", "00c0c0"],
+            ["Tesla", "Automotive + robotics", "https://www.tesla.com", "tesla", "e82127"],
+            ["BMW", "Automotive design", "https://www.bmw.com", "bmw", "4faae3"],
+            ["Boston Dynamics", "Robotics", "https://www.bostondynamics.com", null, null],
+            ["NASA JPL", "Space simulation", "https://www.jpl.nasa.gov", "nasa", "e03c31"]
         ];
 
         const industriesData = ["Architecture", "Digital Twins", "AI", "Simulation", "Virtual Production", "XR", "Game Development", "Industrial Design", "Robotics", "Spatial Computing"];
@@ -2427,9 +2449,12 @@
 
         // Logo marquee (duplicated for seamless loop)
         const marqueeShell = document.getElementById('marquee-shell');
-        const marqueeItems = [...logosData, ...logosData].map(([name, tag, url]) => `
+        const marqueeItems = [...logosData, ...logosData].map(([name, tag, url, slug, color]) => `
   <a class="logo-card" href="${url}" target="_blank" rel="noopener">
-    <div class="lw">${name}<small>${tag}</small></div>
+    ${slug
+    ? `<div class="lm"><img src="https://cdn.simpleicons.org/${slug}/${color}" alt="${name} logo" loading="lazy" onerror="this.parentElement.outerHTML='&lt;div class=&quot;lw&quot;&gt;${name}&lt;small&gt;${tag}&lt;/small&gt;&lt;/div&gt;';" /><span>${name}</span></div>`
+    : `<div class="lw">${name}<small>${tag}</small></div>`
+}
   </a>
 `).join('');
         marqueeShell.innerHTML = `<div class="marquee-track">${marqueeItems}</div>`;
