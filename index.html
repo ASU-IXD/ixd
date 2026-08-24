@@ -2028,10 +2028,10 @@
         <a class="btn ghost-gold" href="#milestones">See Milestones</a>
       </div> -->
                 <!-- <div class="hero-stats">
-        <div class="hero-stat"><strong>16</strong><span>week semester journey</span></div>
-        <div class="hero-stat"><strong>3</strong><span>phases, foundations to showcase</span></div>
-        <div class="hero-stat"><strong>8</strong><span>milestones &amp; assignments</span></div>
-        <div class="hero-stat"><strong>1</strong><span>connected Omniverse pipeline</span></div>
+        <div class="hero-stat"><strong>14</strong><span>week semester journey</span></div>
+        <div class="hero-stat"><strong>2</strong><span>parts, solo build to team world</span></div>
+        <div class="hero-stat"><strong>3</strong><span>graded checkpoints &amp; a weekly build</span></div>
+        <div class="hero-stat"><strong>3</strong><span>ways a world behaves</span></div>
       </div> -->
             </div>
             <!-- <div class="scroll-cue"><span>Scroll</span><div class="line"></div></div> -->
@@ -2161,9 +2161,12 @@
             <div class="wrap">
                 <div class="section-head reveal">
                     <span class="eyebrow">Semester journey</span>
-                    <h2>Three phases, sixteen weeks</h2>
-                    <p>The semester moves from foundations, into the Omniverse platform itself, and finally into tool
-                        integration and your final digital world.</p>
+                    <h2>Two parts, fourteen weeks</h2>
+                    <p>Part One builds a world from nothing to something that runs on its own. Part Two moves from
+                        solo authorship into team pipelines, larger worlds, and real data. Every assignment works
+                        toward the same idea — don't make a world you look at, make a world that behaves: something
+                        <em>authored</em>, where you decide; something <em>simulated</em>, where physics decides;
+                        something <em>reactive</em>, where data decides.</p>
                 </div>
                 <div class="journey-rail reveal" id="journey-rail"></div>
             </div>
@@ -2175,9 +2178,9 @@
                 <div class="section-head reveal">
                     <span class="eyebrow gold">Assignments &amp; achievements</span>
                     <h2>The road to your final world</h2>
-                    <p>Weekly exercises keep the runway moving. Each major assignment is a glowing checkpoint on the
-                        path to the final showcase — open any milestone for deliverables, outcomes, software, and
-                        duration.</p>
+                    <p>Weekly builds keep the runway moving. Three graded checkpoints mark the route — the Week 8
+                        midterm, your team's Week 11 pipeline agreement, and the Week 14 Final Review — open any
+                        milestone for deliverables, outcomes, software, and duration.</p>
                 </div>
                 <div class="roadmap reveal" id="roadmap"></div>
             </div>
@@ -2360,52 +2363,49 @@
 
         const journeyData = [
             {
-                phase: 'Phase 1', week: 'Weeks 1–5', title: 'Foundations', sub: 'Digital worlds, Omniverse, Python, and USD.',
-                body: 'Students build the technical and conceptual foundation of the course — what digital worlds are, what Omniverse is, how Python works in a design context, and how USD structures 3D pipelines. AI‑assisted coding is introduced from day one as a tool, not a crutch.',
-                weeks: [['Week 1', 'Course intro', 'Landscape overview: Omniverse, USD, digital twins, and worldbuilding.'],
-                ['Weeks 2–3', 'Python for Designers + AI‑assisted coding', 'No‑experience‑assumed scripting basics and using AI to code.'],
-                ['Weeks 4–5', 'USD fundamentals + coding practice', 'Scene description, referencing, composition, and first USD scene.']]
+                phase: 'Part One', week: 'Weeks 1–8', title: 'Building a World That Runs', sub: 'From a hand‑authored file to a packaged world that runs on its own.',
+                body: 'The first half builds a world from nothing — starting with a hand‑typed OpenUSD file and ending, by Week 8, with a packaged world a classmate can open, understand, and modify without breaking it. Along the way every world learns to behave in each of the three ways this course cares about: authored, where you decide; simulated, where physics decides; and reactive, where data decides.',
+                weeks: [
+                    ['Week 1', 'A World Is a File', 'Description versus simulation. Hand‑author a small world in a text editor, then deliberately break a provided scene and document the error.'],
+                    ['Week 2', 'Generating a World', 'Direct a generative world model with text, images, and your own photographs — then assess where it misreads space.'],
+                    ['Week 3', 'From Capture to Scene', 'Bring a Gaussian‑splat capture into OpenUSD, scaled and oriented: the splat is what you see, the collider is what the world touches.'],
+                    ['Week 4', 'Composing a World', 'References, payloads, sublayers, and variant sets — build a world that is a structure of relationships, not one heavy file.'],
+                    ['Week 5', 'A World That Falls', 'Colliders, rigid bodies, and physics materials. Give your world weight and drop ten objects into it.'],
+                    ['Week 6', 'A World That Performs', 'Author a roughly twenty‑second sequence of camera and object movement, then edit one of your own keys directly in the file.'],
+                    ['Week 7', 'A World That Responds', 'Visual scripting with OmniGraph Action Graph and NVIDIA Warp — build your first behavior that runs entirely on its own.'],
+                    ['Week 8', 'Midterm: A World That Runs', 'Review and critique, no new material. Package a world that survives a classmate opening and modifying one of its layers.']
+                ]
             },
             {
-                phase: 'Phase 2', week: 'Weeks 6–10', title: 'Omniverse core', sub: 'Nucleus, connectors, simulation, rendering, and digital twinning.',
-                body: 'Students move into the platform itself — Nucleus, connectors, simulation, rendering, and physics — before the digital twin arrives as one mode of world‑making. The midterm project asks students to position their work on the speculative‑to‑twin spectrum.',
-                weeks: [['Weeks 6–7', 'Omniverse platform deep dive', 'Nucleus, connectors, collaborative workflows, and scene setup.'],
-                ['Weeks 8–9', 'Simulation, rendering + digital twinning', 'Physics, lighting, materials, and digital twin applications.'],
-                ['Week 10', 'Midterm project critique', 'Digital world proposal covering concept, pipeline, and audience.']]
-            },
-            {
-                phase: 'Phase 3', week: 'Weeks 11–16', title: 'Tool integration + final project', sub: 'Connect student tools and finish the digital world.',
-                body: 'Students connect their native design tool to the Omniverse pipeline via connectors and USD. The final project develops over this phase, culminating in a showcase where students present a complete digital world with a clearly articulated concept, audience, and intent.',
-                weeks: [['Weeks 11–13', 'Tool integration', 'Revit, Blender, Unreal Engine, or Unity connected through USD pipelines.'],
-                ['Weeks 14–15', 'Final project development', 'Individual consultations, connect with NVIDIA team, and iteration.'],
-                ['Week 16', 'Final showcase', 'Presentation of completed digital worlds.']]
+                phase: 'Part Two', week: 'Weeks 9–14', title: 'Pipelines, Teams, and Larger Worlds', sub: 'Bring your own tools in, join a team, and document a workflow nobody has written down yet.',
+                body: 'The second half moves from solo authorship to team production. Teams are formed right after the midterm. Students bring their own software into the shared pipeline, agree on a team contract before any modeling begins, populate a world at scale, and connect it to real data — then each team writes a tutorial of its own on the workflow it discovered, since these paths are not documented anywhere yet.',
+                weeks: [
+                    ['Week 9', 'Bringing Your Own Tools', 'Move an asset out of Rhino, Revit, Blender, Maya, 3ds Max, or Unreal Engine and into Omniverse — then document what was lost in translation.'],
+                    ['Week 10', 'Making It Survive', 'Repair, validate, and standardize incoming work with Asset Validator and Scene Optimizer so it can be trusted by your team.'],
+                    ['Week 11', 'The Team Pipeline', 'Write your team\u2019s pipeline agreement before modeling begins — layer ownership, naming, units, and orientation. A graded deliverable.'],
+                    ['Week 12', 'Populating the World', 'Point instancing, Surface Instancer, and Navigation Mesh — fill a world with density, variation, and movement without making it unopenable.'],
+                    ['Week 13', 'Worlds and Real Data', 'Connect one real measurement into your world, or generate a controlled batch of synthetic data out of it — choose one direction.'],
+                    ['Week 14', 'Final Review', 'Public review of your team\u2019s packaged, runnable world, its documented pipeline, and the tutorial your team wrote on its workflow.']
+                ]
             }
         ];
 
         const modulesData = [
             {
-                node: '0', milestone: 'Runway', week: 'Every week', duration: 'Ongoing', title: 'Weekly technical exercises', sub: 'Short, focused exercises that build competency week by week.',
-                deliverable: 'A short exercise file each week.', outcome: 'Steady fluency through repeated, low‑stakes practice.', software: 'Whatever tool the week focuses on.'
+                node: '0', milestone: 'Runway', week: 'Weeks 1–14', duration: 'Every week', title: 'Weekly builds', sub: 'A short Friday prep task plus an independent after‑class exercise, every week of the semester.',
+                deliverable: 'A short exercise file each week, built from the tutorial video and the week\u2019s studio session.', outcome: 'Steady, compounding fluency through low‑stakes weekly practice.', software: 'Whatever tool the week focuses on.'
             },
             {
-                node: '1', milestone: 'Assignment 1', week: 'Weeks 4–5', duration: '~2 weeks', title: 'My First USD Scene', sub: 'Compose a scene with a referenced asset, a light, and a camera.',
-                deliverable: 'A .usd file plus a short reflection.', outcome: 'Baseline scene‑composition and referencing workflow.', software: 'Omniverse, OpenUSD'
+                node: '1', milestone: 'Midterm', week: 'Week 8', duration: '1 week', title: 'A World That Runs', sub: 'Package a world so someone else can open it, understand it, and change part of it.',
+                deliverable: 'A packaged OpenUSD world using all three kinds of time (authored, simulated, reactive), a captured video, and a one‑page layer‑structure diagram.', outcome: 'A world built to survive a classmate opening and editing one of its layers — part of the grade.', software: 'OpenUSD, Collect Asset, Movie Capture'
             },
             {
-                node: '2', milestone: 'Assignment 2', week: 'Weeks 2–5', duration: '~3 weeks', title: 'Python + Omniverse Script', sub: 'Use AI‑assisted coding to modify or generate a USD scene.',
-                deliverable: 'A working Python script and the resulting scene.', outcome: 'Comfort with scripting and AI‑assisted workflows.', software: 'Python, Omniverse API'
+                node: '2', milestone: 'Team deliverable', week: 'Week 11', duration: '1 week', title: 'Team Pipeline Agreement', sub: 'Written before any modeling begins — how your team will share one world without overwriting each other.',
+                deliverable: 'A published contract covering layer ownership, naming, units, orientation, and how assets enter the world.', outcome: 'A working, agreed‑upon collaborative process, in place before production starts.', software: 'Layers, edit targets, live sessions, version control'
             },
             {
-                node: '3', milestone: 'Assignment 3', week: 'Weeks 11–13', duration: '~3 weeks', title: 'Tool Connection', sub: 'Move a model or scene from your tool into Omniverse.',
-                deliverable: 'A shared Omniverse scene with pipeline documentation.', outcome: 'A clean, repeatable design‑to‑platform workflow.', software: 'Revit, Blender, Unreal, or Unity'
-            },
-            {
-                node: '4', milestone: 'Midterm', week: 'Week 10', duration: '1 week', title: 'Digital World Proposal', sub: 'Present your final concept and spectrum position.',
-                deliverable: 'A proposal presentation for critique.', outcome: 'Concept clarity, intent, and technical direction.', software: 'Omniverse, presentation tools'
-            },
-            {
-                node: '5', milestone: 'Final', week: 'Week 16', duration: '~5 weeks', title: 'Digital World Showcase', sub: 'Present a complete digital world built in Omniverse.',
-                deliverable: 'A finished digital world and presentation.', outcome: 'A coherent, polished, defensible final outcome.', software: 'Full connected pipeline'
+                node: '3', milestone: 'Final', week: 'Week 14', duration: '~4 weeks', title: 'Final Review', sub: 'Present your team\u2019s completed, runnable world in a public review.',
+                deliverable: 'Your team\u2019s packaged and runnable world, its documented pipeline, and a team‑authored tutorial on the workflow you developed.', outcome: 'A publicly reviewed team world, plus a real contribution to workflows that aren\u2019t documented anywhere else yet.', software: 'Full connected team pipeline'
             }
         ];
 
@@ -2435,12 +2435,12 @@
         ];
 
         const faqData = [
-            ['What does assessment look like?', 'Weekly technical exercises plus three assignments — My First USD Scene, a Python + Omniverse script, and a Tool Connection project — followed by a midterm proposal and a final showcase. Exact grading weights are set in the official syllabus.'],
+            ['What does assessment look like?', 'A short build every week, plus three graded checkpoints: the Week 8 midterm (a packaged world that has to survive a classmate opening and editing it), your team\u2019s Week 11 pipeline agreement, and the Week 14 Final Review. Exact grading weights are set in the official syllabus.'],
             ['Who is this course for?', 'Graduate and undergraduate students in immersive experience design, architecture, industrial design, and related creative technology fields who want to build digital worlds with a professional pipeline.'],
-            ['Do I need coding experience?', 'No. Python and AI‑assisted coding are introduced from week one with no prior programming assumed — the course scaffolds scripting alongside the design work.'],
-            ['Which design tools connect to the pipeline?', 'Revit, Blender, Unreal Engine, and Unity all connect into Omniverse through connectors and shared USD scenes — bring the tool you already know.'],
-            ['Is NVIDIA directly involved?', 'Yes. NVIDIA collaborators participate in the midterm critique and are available during selected hours throughout the semester.'],
-            ['What do I walk away with?', 'A complete digital world — positioned deliberately on the speculative‑to‑twin spectrum — plus a portfolio‑ready USD pipeline and a defensible design process.']
+            ['Do I need coding experience?', 'No. Week 1 starts with hand‑authoring a file in a text editor, and behavior scripting — OmniGraph, Python, NVIDIA Warp — isn\u2019t introduced until Week 7, once you already know what a world is made of.'],
+            ['Which design tools connect to the pipeline?', 'Rhino, Revit, Blender, Maya, 3ds Max, and Unreal Engine all connect into Omniverse through connectors and shared USD scenes — bring the tool you already know, starting Week 9.'],
+            ['Is NVIDIA directly involved?', 'Yes. The course is built around NVIDIA Omniverse and its tooling — USD Composer, SimReady Explorer, Warp, and Replicator — throughout the semester.'],
+            ['What do I walk away with?', 'A team‑built world that behaves — authored, simulated, and reactive — plus a documented pipeline and a workflow tutorial your team wrote yourselves.']
         ];
 
         /* ============================================================
