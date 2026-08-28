@@ -1354,6 +1354,24 @@
             line-height: 1.5;
         }
 
+        .journey-week .wr {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 8px;
+            font-family: var(--font-mono);
+            font-size: 11.5px;
+            letter-spacing: 0.03em;
+            color: var(--nvidia-bright);
+            text-decoration: none;
+            border-bottom: 1px solid rgba(166, 255, 30, 0.3);
+            transition: border-color .2s ease, opacity .2s ease;
+        }
+
+        .journey-week .wr:hover {
+            border-color: rgba(166, 255, 30, 0.8);
+        }
+
         /* ================= ROADMAP / MILESTONES ================= */
         .roadmap {
             position: relative;
@@ -2161,7 +2179,7 @@
             <div class="wrap">
                 <div class="section-head reveal">
                     <span class="eyebrow">Semester journey</span>
-                    <h2>Two parts, fourteen weeks</h2>
+                    <h2>Weekly Schedule</h2>
                     <p>Part One builds a world from nothing to something that runs on its own. Part Two moves from
                         solo authorship into team pipelines, larger worlds, and real data. Every assignment works
                         toward the same idea — don't make a world you look at, make a world that behaves: something
@@ -2178,7 +2196,7 @@
                 <div class="section-head reveal">
                     <span class="eyebrow gold">Assignments &amp; achievements</span>
                     <h2>The road to your final world</h2>
-                    <p>Weekly builds keep the runway moving. Three graded checkpoints mark the route — the Week 8
+                    <p>Weekly builds keep the runway moving. Three graded checkpoints mark the route — the Weeks 7–8
                         midterm, your team's Week 11 pipeline agreement, and the Week 14 Final Review — open any
                         milestone for deliverables, outcomes, software, and duration.</p>
                 </div>
@@ -2363,17 +2381,17 @@
 
         const journeyData = [
             {
-                phase: 'Part One', week: 'Weeks 1–8', title: 'Building a World That Runs', sub: 'From a hand‑authored file to a packaged world that runs on its own.',
-                body: 'The first half builds a world from nothing — starting with a hand‑typed OpenUSD file and ending, by Week 8, with a packaged world a classmate can open, understand, and modify without breaking it. Along the way every world learns to behave in each of the three ways this course cares about: authored, where you decide; simulated, where physics decides; and reactive, where data decides.',
+                phase: 'Part One', week: 'Weeks 1–8', title: 'Building a World That Runs', sub: 'From a hand‑authored file to a midterm world, ready for review.',
+                body: 'The first half builds a world from nothing — starting with an NVIDIA‑led orientation to Omniverse and ending, by Week 8, with a midterm world presented for critique. Along the way every world learns to behave in each of the three ways this course cares about: authored, where you decide; simulated, where physics decides; and reactive, where data decides.',
                 weeks: [
-                    ['Week 1', 'A World Is a File', 'Description versus simulation. Hand‑author a small world in a text editor, then deliberately break a provided scene and document the error.'],
-                    ['Week 2', 'Generating a World', 'Direct a generative world model with text, images, and your own photographs — then assess where it misreads space.'],
-                    ['Week 3', 'From Capture to Scene', 'Bring a Gaussian‑splat capture into OpenUSD, scaled and oriented: the splat is what you see, the collider is what the world touches.'],
-                    ['Week 4', 'Composing a World', 'References, payloads, sublayers, and variant sets — build a world that is a structure of relationships, not one heavy file.'],
-                    ['Week 5', 'A World That Falls', 'Colliders, rigid bodies, and physics materials. Give your world weight and drop ten objects into it.'],
-                    ['Week 6', 'A World That Performs', 'Author a roughly twenty‑second sequence of camera and object movement, then edit one of your own keys directly in the file.'],
-                    ['Week 7', 'A World That Responds', 'Visual scripting with OmniGraph Action Graph and NVIDIA Warp — build your first behavior that runs entirely on its own.'],
-                    ['Week 8', 'Midterm: A World That Runs', 'Review and critique, no new material. Package a world that survives a classmate opening and modifying one of its layers.']
+                    ['Week 1', 'A World Is a File', 'A guest lecture from NVIDIA opens the semester. Install Omniverse, create your NVIDIA account, and work through Module 1 of the OpenUSD tutorial — applying materials and getting comfortable in the UI.', 'Fundamentals of Working With OpenUSD (Module 1)', 'https://learn.nvidia.com/courses/course?course_id=course-v1:DLI+S-OV-15+V1&unit=block-v1:DLI+S-OV-15+V1+type@vertical+block@d1876bc99b9141f6813eb796f564b231'],
+                    ['Week 2', 'Generating a World', 'Generate three worlds from three kinds of input, one from your own photographs, then bring a Gaussian‑splat capture into OpenUSD — oriented and set to real‑world scale. The splat is what you see, the collider is what the world touches.', 'Digital Twin Fundamentals (Modules 1–2)', 'https://learn.nvidia.com/courses/course?course_id=course-v1:DLI+S-OV-13+V1&unit=block-v1:DLI+S-OV-13+V1+type@vertical+block@4bfaf324c8ef46ac870ca7def88957d5'],
+                    ['Week 3', 'World Building + Physics', 'A worldbuilding guest lecture, then a first look at animated USD and physics in USD Composer. Restructure your world into layers, swap a referenced asset to prove the structure holds, and submit a diagram of your layer stack.', 'Digital Twin Fundamentals (through Module 3: Physics)', 'https://learn.nvidia.com/courses/course?course_id=course-v1:DLI+S-OV-13+V1&unit=block-v1:DLI+S-OV-13+V1+type@vertical+block@4bfaf324c8ef46ac870ca7def88957d5'],
+                    ['Week 4', 'Animation + Physics', 'Physics as authorship — how rules make meaning. Colliders, rigid bodies, physics materials, and mass in USD Composer and SimReady, pairing a visual representation with a physical one so a captured world becomes touchable.'],
+                    ['Week 5', 'A World That Falls', 'Put Week 4\u2019s physics to work — give your world weight, drop objects into it, and see where they actually land.'],
+                    ['Week 6', 'A World That Performs + Responds', 'Two ideas, one session: time and duration in spatial media, and responsive environments where behavior becomes a material of its own — authored movement and reactive behavior side by side.'],
+                    ['Week 7', 'Midterm Submission', 'Submit your midterm world for review.'],
+                    ['Week 8', 'Midterm Presentation', 'Format: review and critique. Present your midterm world to the class.']
                 ]
             },
             {
@@ -2396,8 +2414,8 @@
                 deliverable: 'A short exercise file each week, built from the tutorial video and the week\u2019s studio session.', outcome: 'Steady, compounding fluency through low‑stakes weekly practice.', software: 'Whatever tool the week focuses on.'
             },
             {
-                node: '1', milestone: 'Midterm', week: 'Week 8', duration: '1 week', title: 'A World That Runs', sub: 'Package a world so someone else can open it, understand it, and change part of it.',
-                deliverable: 'A packaged OpenUSD world using all three kinds of time (authored, simulated, reactive), a captured video, and a one‑page layer‑structure diagram.', outcome: 'A world built to survive a classmate opening and editing one of its layers — part of the grade.', software: 'OpenUSD, Collect Asset, Movie Capture'
+                node: '1', milestone: 'Midterm', week: 'Weeks 7–8', duration: '2 weeks', title: 'Midterm World', sub: 'Submit in Week 7, present for review and critique in Week 8.',
+                deliverable: 'Your midterm world, submitted in Week 7 and presented in Week 8.', outcome: 'A world built with intent, ready to stand up to classmate and instructor critique.', software: 'Omniverse, USD Composer'
             },
             {
                 node: '2', milestone: 'Team deliverable', week: 'Week 11', duration: '1 week', title: 'Team Pipeline Agreement', sub: 'Written before any modeling begins — how your team will share one world without overwriting each other.',
@@ -2421,8 +2439,10 @@
         ];
 
         const softwareData = [
-            ['NVIDIA Omniverse', 'Platform'], ['OpenUSD', 'Scene format'], ['Blender', 'Modeling'], ['Revit', 'BIM & architecture'],
-            ['Unity', 'Real‑time engine'], ['Unreal Engine', 'Real‑time engine'], ['VS Code', 'Editor'], ['Python', 'Scripting'], ['GitHub', 'Version control']
+            ['NVIDIA Omniverse', 'Platform'], ['OpenUSD', 'Scene format'], ['USD Composer', 'World composition'], ['SimReady Explorer', 'Physics‑ready assets'],
+            ['Omniverse Physics', 'Simulation'], ['Gaussian Splatting', 'Capture to scene'], ['Marble', 'Generative worlds'], ['Meshy', 'Generative worlds'],
+            ['Blender', 'Modeling'], ['Revit', 'BIM & architecture'], ['Unity', 'Real‑time engine'], ['Unreal Engine', 'Real‑time engine'],
+            ['VS Code', 'Editor'], ['Python', 'Scripting'], ['GitHub', 'Version control']
         ];
 
         const resourceData = [
@@ -2435,9 +2455,9 @@
         ];
 
         const faqData = [
-            ['What does assessment look like?', 'A short build every week, plus three graded checkpoints: the Week 8 midterm (a packaged world that has to survive a classmate opening and editing it), your team\u2019s Week 11 pipeline agreement, and the Week 14 Final Review. Exact grading weights are set in the official syllabus.'],
+            ['What does assessment look like?', 'A short build every week, plus three graded checkpoints: the Week 7–8 midterm (submit in Week 7, present for critique in Week 8), your team\u2019s Week 11 pipeline agreement, and the Week 14 Final Review. Exact grading weights are set in the official syllabus.'],
             ['Who is this course for?', 'Graduate and undergraduate students in immersive experience design, architecture, industrial design, and related creative technology fields who want to build digital worlds with a professional pipeline.'],
-            ['Do I need coding experience?', 'No. Week 1 starts with hand‑authoring a file in a text editor, and behavior scripting — OmniGraph, Python, NVIDIA Warp — isn\u2019t introduced until Week 7, once you already know what a world is made of.'],
+            ['Do I need coding experience?', 'No. Week 1 is a guided orientation to Omniverse and OpenUSD with an NVIDIA guest lecture — behavior scripting with OmniGraph and Python comes later, once you already know what a world is made of.'],
             ['Which design tools connect to the pipeline?', 'Rhino, Revit, Blender, Maya, 3ds Max, and Unreal Engine all connect into Omniverse through connectors and shared USD scenes — bring the tool you already know, starting Week 9.'],
             ['Is NVIDIA directly involved?', 'Yes. The course is built around NVIDIA Omniverse and its tooling — USD Composer, SimReady Explorer, Warp, and Replicator — throughout the semester.'],
             ['What do I walk away with?', 'A team‑built world that behaves — authored, simulated, and reactive — plus a documented pipeline and a workflow tutorial your team wrote yourselves.']
@@ -2521,7 +2541,7 @@
         <div class="journey-body-in">
           <p>${item.body}</p>
           <div class="journey-weeks">
-            ${item.weeks.map(w => `<div class="journey-week"><div class="ww">${w[0]}</div><div><div class="wt">${w[1]}</div><div class="wd">${w[2]}</div></div></div>`).join('')}
+            ${item.weeks.map(w => `<div class="journey-week"><div class="ww">${w[0]}</div><div><div class="wt">${w[1]}</div><div class="wd">${w[2]}</div>${w[3] ? `<a class="wr" href="${w[4]}" target="_blank" rel="noopener">${w[3]} ↗</a>` : ''}</div></div>`).join('')}
           </div>
         </div>
       </div>
