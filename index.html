@@ -2035,11 +2035,12 @@
                     <span class="badge green">NVIDIA Omniverse collaboration</span>
                     <span class="badge gold">The Design School · MIX Center</span>
                     <span class="badge">Graduate + undergraduate · no coding experience assumed</span>
+                    <span class="badge green">Physical AI &amp; robotics simulation</span>
                 </div>
                 <h1>Designing Digital Worlds</h1>
                 <p class="hero-sub">Create immersive digital worlds using NVIDIA Omniverse, OpenUSD, AI‑assisted coding,
-                    simulation, and real‑time rendering — moving fluidly between speculative worldbuilding and precise
-                    digital twins.</p>
+                    simulation, and real‑time rendering — moving fluidly between speculative worldbuilding, physical
+                    AI, and precise digital twins.</p>
                 <!-- <div class="hero-actions">
         <a class="btn primary" href="#overview">View Course<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         <a class="btn" href="#journey">Explore Journey</a>
@@ -2062,7 +2063,8 @@
                     <span class="eyebrow">Industry alignment</span>
                     <h2>Where These Skills Are Used</h2>
                     <p>OpenUSD and Omniverse workflows are already the connective tissue behind the studios, labs, and
-                        manufacturers building the world's next digital environments.</p>
+                        manufacturers building the world's next digital environments — and the physical AI and
+                        robotics systems being trained and tested inside them.</p>
                 </div>
             </div>
             <div class="marquee-shell reveal" id="marquee-shell"></div>
@@ -2094,7 +2096,8 @@
                                 disciplines.</li>
                             <li>Build foundational Python skills and AI‑assisted coding workflows for scripting and
                                 automation.</li>
-                            <li>Learn Universal Scene Description as the shared language of 3D pipelines.</li>
+                            <li>Learn OpenUSD as an open and extensible framework for creating, editing, querying,
+                                rendering, collaborating, and simulating within 3D worlds.</li>
                             <li>Integrate tools such as Revit, Blender, Unreal Engine, and Unity into one Omniverse
                                 pipeline.</li>
                             <li>Apply digital‑twinning principles to materials, lighting, physics, and real‑world
@@ -2179,7 +2182,7 @@
             <div class="wrap">
                 <div class="section-head reveal">
                     <span class="eyebrow">Semester journey</span>
-                    <h2>Weekly Schedule</h2>
+                    <h2>Two parts, fourteen weeks</h2>
                     <p>Part One builds a world from nothing to something that runs on its own. Part Two moves from
                         solo authorship into team pipelines, larger worlds, and real data. Every assignment works
                         toward the same idea — don't make a world you look at, make a world that behaves: something
@@ -2327,10 +2330,10 @@
             ["NASA JPL", "Space simulation", "https://www.jpl.nasa.gov", "nasa", "e03c31"]
         ];
 
-        const industriesData = ["Architecture", "Digital Twins", "AI", "Simulation", "Virtual Production", "XR", "Game Development", "Industrial Design", "Robotics", "Spatial Computing"];
+        const industriesData = ["Architecture", "Digital Twins", "AI", "Physical AI", "Simulation", "Virtual Production", "XR", "Game Development", "Industrial Design", "Robotics", "Spatial Computing"];
 
         const featureData = [
-            ["OpenUSD", "<path d='M4 7h16M4 12h16M4 17h10'/>", "The shared scene‑description language that structures, references, and composes every 3D pipeline in the course."],
+            ["OpenUSD", "<path d='M4 7h16M4 12h16M4 17h10'/>", "An open and extensible framework for creating, editing, querying, rendering, collaborating, and simulating within 3D worlds."],
             ["Omniverse", "<circle cx='12' cy='12' r='8'/><circle cx='12' cy='12' r='3'/>", "Nucleus, connectors, and collaborative live‑sync workflows that bring every tool into one shared scene."],
             ["Python", "<path d='M8 3h8v6H8zM8 15h8v6H8z'/><path d='M8 9c-3 0-3 3 0 3M16 15c3 0 3-3 0-3'/>", "No‑experience‑assumed scripting for automation, procedural scenes, and pipeline tooling."],
             ["AI‑assisted coding", "<path d='M12 3v4M12 17v4M3 12h4M17 12h4'/><circle cx='12' cy='12' r='4'/>", "Introduced from day one as a tool for scripting and iteration, not a shortcut around understanding."],
@@ -2372,6 +2375,12 @@
                 example: 'A product line rendered with physically accurate materials.', software: 'Blender, Omniverse, MDL materials', skills: 'Material authoring, product visualization'
             },
             {
+                id: 'physicalai', title: 'Physical AI', kicker: 'Robotics + embodied AI', short: 'Simulated environments where robots and autonomous systems learn.',
+                copy: 'Build physically accurate simulation environments used to train, test, and validate robots and other embodied AI before they touch the real world — the world itself becomes the training ground.',
+                bullets: ['Robotics simulation environments', 'Synthetic data generation for training', 'Sensor, physics, and sim‑to‑real accuracy'],
+                example: 'A warehouse twin used to train a robot\u2019s navigation and manipulation policies.', software: 'Omniverse, Isaac Sim, Python', skills: 'Robotics simulation, synthetic data, physics accuracy'
+            },
+            {
                 id: 'twin', title: 'Digital twins', kicker: 'Real‑world systems', short: 'Precision, simulation, and analysis.',
                 copy: 'Build precise digital representations of real spaces, systems, or objects, emphasizing materials, physics, and simulation that support analysis.',
                 bullets: ['Real‑world conditions and materials', 'Simulation and technical accuracy', 'Sensor and data‑driven scenes'],
@@ -2390,7 +2399,7 @@
                     ['Week 4', 'Animation + Physics', 'Physics as authorship — how rules make meaning. Colliders, rigid bodies, physics materials, and mass in USD Composer and SimReady, pairing a visual representation with a physical one so a captured world becomes touchable.'],
                     ['Week 5', 'A World That Falls', 'Put Week 4\u2019s physics to work — give your world weight, drop objects into it, and see where they actually land.'],
                     ['Week 6', 'A World That Performs + Responds', 'Two ideas, one session: time and duration in spatial media, and responsive environments where behavior becomes a material of its own — authored movement and reactive behavior side by side.'],
-                    ['Week 7', 'Midterm Submission', 'Submit your midterm world for review.'],
+                    ['Week 7', 'Midterm Submission', 'No new material. Submit your midterm world for review.'],
                     ['Week 8', 'Midterm Presentation', 'Format: review and critique. Present your midterm world to the class.']
                 ]
             },
@@ -2414,7 +2423,7 @@
                 deliverable: 'A short exercise file each week, built from the tutorial video and the week\u2019s studio session.', outcome: 'Steady, compounding fluency through low‑stakes weekly practice.', software: 'Whatever tool the week focuses on.'
             },
             {
-                node: '1', milestone: 'Midterm', week: 'Weeks 7–8', duration: '2 weeks', title: 'Midterm World', sub: 'Submit in Week 7, present for review and critique in Week 8.',
+                node: '1', milestone: 'Midterm', week: 'Weeks 7–8', duration: '2 weeks', title: 'Midterm World', sub: 'Submit in Week 7, present for review and critique in Week 8 — no new material either week.',
                 deliverable: 'Your midterm world, submitted in Week 7 and presented in Week 8.', outcome: 'A world built with intent, ready to stand up to classmate and instructor critique.', software: 'Omniverse, USD Composer'
             },
             {
@@ -2435,7 +2444,10 @@
             { title: 'Simulation Designer', icon: "<circle cx='12' cy='12' r='9'/><path d='M12 3a9 9 0 010 18'/>", resp: 'Builds physics‑based systems that model real‑world behavior for testing, training, or storytelling.', companies: ['Boston Dynamics', 'NVIDIA', 'NASA JPL', 'Tesla'], skills: ['Physics simulation', 'Python', 'Omniverse'] },
             { title: '3D Pipeline Developer', icon: "<circle cx='6' cy='6' r='3'/><circle cx='18' cy='6' r='3'/><circle cx='12' cy='18' r='3'/><path d='M8.5 7.5L11 16M15.5 7.5L13 16M9 6h6'/>", resp: 'Connects Blender, Unreal, Unity, and Revit into unified, collaborative production pipelines.', companies: ['Weta FX', 'Pixar', 'ILM', 'Disney'], skills: ['OpenUSD', 'Connectors', 'Interoperability'] },
             { title: 'Environment Artist', icon: "<path d='M3 18l6-9 4 6 3-4 5 7z'/>", resp: 'Builds the worlds players and viewers move through — terrain, lighting, and atmosphere.', companies: ['Epic Games', 'Unity', 'Disney', 'Pixar'], skills: ['World‑building', 'Composition', 'Lighting'] },
-            { title: 'Virtual Production Artist', icon: "<rect x='2' y='5' width='20' height='13' rx='2'/><path d='M9 21h6M12 18v3'/>", resp: 'Creates real‑time environments and LED‑volume scenes used on film and broadcast sets.', companies: ['ILM', 'Weta FX', 'Disney', 'Epic Games'], skills: ['Real‑time rendering', 'USD', 'Virtual sets'] }
+            { title: 'Virtual Production Artist', icon: "<rect x='2' y='5' width='20' height='13' rx='2'/><path d='M9 21h6M12 18v3'/>", resp: 'Creates real‑time environments and LED‑volume scenes used on film and broadcast sets.', companies: ['ILM', 'Weta FX', 'Disney', 'Epic Games'], skills: ['Real‑time rendering', 'USD', 'Virtual sets'] },
+            { title: 'Simulation World Builder', icon: "<path d='M12 2l8 4.5v11L12 22l-8-4.5v-11z'/><path d='M12 12l8-4.5M12 12v10M12 12L4 7.5'/>", resp: 'Constructs physically accurate virtual environments used to train and validate robots and autonomous systems.', companies: ['NVIDIA', 'Boston Dynamics', 'Tesla', 'Amazon'], skills: ['Physical AI environments', 'Omniverse', 'Physics accuracy'] },
+            { title: 'Robotics Simulation Engineer', icon: "<rect x='5' y='9' width='14' height='10' rx='2'/><circle cx='9' cy='14' r='1.4'/><circle cx='15' cy='14' r='1.4'/><path d='M12 9V5M9 5h6'/>", resp: 'Builds and tunes the sensor, physics, and behavior models robots are trained and tested against before real‑world deployment.', companies: ['Boston Dynamics', 'NVIDIA', 'NASA JPL', 'Tesla'], skills: ['Robotics simulation', 'Sensor modeling', 'Sim‑to‑real transfer'] },
+            { title: 'Synthetic Data Artist', icon: "<circle cx='7' cy='7' r='2.5'/><circle cx='17' cy='7' r='2.5'/><circle cx='7' cy='17' r='2.5'/><circle cx='17' cy='17' r='2.5'/><path d='M9.5 7h5M7 9.5v5M17 9.5v5M9.5 17h5'/>", resp: 'Generates and curates large, varied synthetic datasets used to train perception and decision‑making models.', companies: ['NVIDIA', 'Meta', 'Google', 'Amazon'], skills: ['Synthetic data generation', 'Domain randomization', 'Omniverse Replicator'] }
         ];
 
         const softwareData = [
@@ -2459,7 +2471,7 @@
             ['Who is this course for?', 'Graduate and undergraduate students in immersive experience design, architecture, industrial design, and related creative technology fields who want to build digital worlds with a professional pipeline.'],
             ['Do I need coding experience?', 'No. Week 1 is a guided orientation to Omniverse and OpenUSD with an NVIDIA guest lecture — behavior scripting with OmniGraph and Python comes later, once you already know what a world is made of.'],
             ['Which design tools connect to the pipeline?', 'Rhino, Revit, Blender, Maya, 3ds Max, and Unreal Engine all connect into Omniverse through connectors and shared USD scenes — bring the tool you already know, starting Week 9.'],
-            ['Is NVIDIA directly involved?', 'Yes. The course is built around NVIDIA Omniverse and its tooling — USD Composer, SimReady Explorer, Warp, and Replicator — throughout the semester.'],
+            ['Is NVIDIA directly involved?', 'The course is built around NVIDIA Omniverse libraries and Learn OpenUSD curriculum throughout the semester.'],
             ['What do I walk away with?', 'A team‑built world that behaves — authored, simulated, and reactive — plus a documented pipeline and a workflow tutorial your team wrote yourselves.']
         ];
 
