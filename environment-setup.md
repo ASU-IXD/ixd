@@ -46,6 +46,6 @@ The Kit App Template includes several application templates. Read the descriptio
 |----------|-------------|
 | **Kit Service** | A minimal headless Omniverse Kit service for backend applications that do not require a graphical interface. |
 | **Kit Base Editor** | A lightweight graphical application for loading, editing, and rendering OpenUSD content. |
-| **USD Composer** | An application template for authoring complex OpenUSD scenes such as configurators and interactive environments. |
-| **USD Explorer** | An application designed for exploring and collaborating on large OpenUSD scenes. |
-| **USD Viewer** | A viewport-only application intended for viewing and streaming OpenUSD content. |
+| **[USD Composer](https://github.com/NVIDIA-Omniverse/kit-app-template/tree/main/templates/apps/usd_composer)** | An application template for authoring complex OpenUSD scenes such as configurators and interactive environments. |
+| **[USD Explorer](https://github.com/NVIDIA-Omniverse/kit-app-template/tree/main/templates/apps/usd_explorer)** | An application designed for exploring and collaborating on large OpenUSD scenes. |
+| **[USD Viewer](https://github.com/NVIDIA-Omniverse/kit-app-template/tree/main/templates/apps/usd_viewer)** | A viewport-only application intended for viewing and streaming OpenUSD content. |
