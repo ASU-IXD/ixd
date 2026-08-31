@@ -1,4 +1,4 @@
-# Week 1: Environment Setup
+# Environment Setup
 
 ## Objectives
 
