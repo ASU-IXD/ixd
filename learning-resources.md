@@ -4,12 +4,12 @@ This page contains recommended NVIDIA training courses that complement the mater
 
 It is recommended that students complete the courses in the following order:
 
-1. **[Fundamentals of Working With OpenUSD](https://github.com/ASU-IXD/ixd/new/main#fundamentals-of-working-with-openusd)**
-2. **[Extend Omniverse Kit Applications for Building Digital Twins](https://github.com/ASU-IXD/ixd/new/main#extend-omniverse-kit-applications-for-building-digital-twins)**
+1. **[Fundamentals of Working With OpenUSD](#fundamentals-of-working-with-openusd)**
+2. **[Extend Omniverse Kit Applications for Building Digital Twins](#extend-omniverse-kit-applications-for-building-digital-twins)**
 
 ---
 
-# Fundamentals of Working With OpenUSD
+## Fundamentals of Working With OpenUSD
 
 **Course Link:**  
 [Here](https://learn.nvidia.com/courses/course?course_id=course-v1:DLI+S-OV-15+V1&unit=block-v1:DLI+S-OV-15+V1+type@vertical+block@d1876bc99b9141f6813eb796f564b231)
@@ -30,7 +30,7 @@ This course introduces the fundamentals of **OpenUSD (Universal Scene Descriptio
 
 ---
 
-# Extend Omniverse Kit Applications for Building Digital Twins
+## Extend Omniverse Kit Applications for Building Digital Twins
 
 **Course Link:**  
 [Here](https://learn.nvidia.com/courses/course?course_id=course-v1:DLI+S-OV-13+V1&unit=block-v1:DLI+S-OV-13+V1+type@vertical+block@d1fe256beea34694a7e9740f765cc671)
