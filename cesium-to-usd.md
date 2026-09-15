@@ -78,7 +78,6 @@ Once connected, you can stream terrain, imagery, photogrammetry, and 3D building
 Using the Cesium panel:
 
 - Add **Cesium World Terrain + Bing Maps Aerial Imagery**
-- Add **Cesium OSM Buildings**
 
 Explore the scene by navigating around the globe and adjusting the camera settings as needed.
 
