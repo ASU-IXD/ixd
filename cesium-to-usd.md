@@ -110,7 +110,17 @@ This tutorial covers:
 
 ---
 
-  # Additional Resources
+# Photorealistic 3D Tiles from Google Maps Platform in Cesium for Omniverse
+
+Loading Photorealistic 3D Tiles content into NVIDIA Omniverse USD Composer (formerly Create) using the Cesium for Omniverse extension and Cesium ion.
+
+Follow the official tutorial:
+
+- [Photorealistic 3D Tiles from Google Maps Platform in Cesium for Omniverse](https://cesium.com/learn/omniverse/omniverse-photorealistic-3d-tiles/)
+
+---
+
+# Additional Resources
 
 - [Aerometrex dataset](https://ion.cesium.com/assetdepot/1415196)
 - [Add more functionalities from Cesium to Omniverse](https://cesium.com/learn/omniverse/)
