@@ -97,3 +97,25 @@ After completing these steps, you should have:
 - Converted the model into the USD format.
 - Applied the object's primary texture manually.
 - Verified that the textured model appears correctly in the Omniverse viewport.
+
+---
+
+# Importing FBX Files
+
+The same workflow can be used to import **`.fbx`** files into NVIDIA Omniverse.
+
+1. Drag and drop the `.fbx` file into your Omniverse scene.
+2. Right-click the imported object and select **Convert to USD**.
+3. Keep the default conversion settings.
+4. Enter a name for the USD file.
+5. Click **Convert**.
+
+Unlike `.obj` files, **`.fbx` files support animations**. If the imported model contains animation data, the animations will be preserved during the conversion to USD.
+
+After the conversion is complete:
+
+1. Select the imported USD object.
+2. Click the **Play** button on the timeline.
+3. Verify that the model's animations play correctly in the viewport.
+
+> **Note:** If the model includes materials and textures, they may need to be assigned manually depending on how the original FBX file was exported.
