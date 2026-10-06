@@ -2396,7 +2396,7 @@
 
         const journeyData = [
             {
-                phase: 'Part One', week: 'Weeks 1–8', title: 'Building a World That Runs', sub: 'From a hand‑authored file to a midterm world, ready for review.',
+                phase: 'Part One', week: 'Weeks 1–7', title: 'Building a World That Runs', sub: 'From a hand‑authored file to a midterm world, ready for review.',
                 body: 'The first half builds a world from nothing — starting with an NVIDIA‑led orientation to Omniverse and ending, by Week 8, with a midterm world presented for critique. Along the way every world learns to behave in each of the three ways this course cares about: authored, where you decide; simulated, where physics decides; and reactive, where data decides.',
                 weeks: [
                     ['Week 1', 'A World Is a File', 'A guest lecture from NVIDIA opens the semester. Install and set up NVIDIA Omniverse Kit, create your NVIDIA account, and launch your first Kit application. Then move into Module 1 of the NVIDIA OpenUSD tutorial, working up through Navigation Basics and getting comfortable applying materials in the UI.', [
@@ -2414,17 +2414,18 @@
                         ['Cesium to USD guide', 'https://github.com/ASU-IXD/ixd/blob/main/cesium-to-usd.md'],
                         ['OBJ/FBX to USD guide', 'https://github.com/ASU-IXD/ixd/blob/main/obj-fbx-to-usd.md']
                     ]],
-                    ['Week 5', 'Worldbuilding, Animations, Physics', 'A worldbuilding guest lecture opens the session, followed by physics and animation in USD Composer — colliders, rigid bodies, physics materials, and mass, pairing a visual representation with a physical one so a captured world becomes touchable. Put it to work: give your world weight, drop objects into it, and see where they actually land.'],
-                    ['Week 6', 'A World That Performs + Responds', 'Two ideas, one session: time and duration in spatial media, and responsive environments where behavior becomes a material of its own — authored movement and reactive behavior side by side.'],
-                    ['Week 7', 'Midterm Submission', 'No new material. Submit your midterm world for review.'],
-                    ['Week 8', 'Midterm Presentation', 'Format: review and critique. Present your midterm world to the class.']
+                    ['Week 5', 'Worldbuilding, Animations', 'A worldbuilding guest lecture opens the session, followed by simulation and animation in USD Composer — colliders, rigid bodies, materials, and mass, pairing a visual representation with a physical one so a captured world becomes touchable. Put it to work: give your world weight, drop objects into it, and see where they actually land.'],
+                    ['Week 6', 'Physics + Student Animation Showcase', 'A hands‑on look at physics simulation in USD Composer — rigid body dynamics, a solid‑to‑liquid particle system, a conveyor belt driven by surface velocity, and a falling‑leaves animation — followed by students presenting the animation projects they\u2019ve been building.', [
+                        ['Physics simulation guide', 'https://github.com/ASU-IXD/ixd/blob/main/physics-simulation.md']
+                    ]],
+                    ['Week 7', 'Midterm Submission', 'No new material. Submit your midterm world for review.']
                 ]
             },
             {
-                phase: 'Part Two', week: 'Weeks 9–14', title: 'Pipelines, Teams, and Larger Worlds', sub: 'Bring your own tools in, join a team, and document a workflow nobody has written down yet.',
+                phase: 'Part Two', week: 'Weeks 8–14', title: 'Pipelines, Teams, and Larger Worlds', sub: 'Bring your own tools in, join a team, and document a workflow nobody has written down yet.',
                 body: 'The second half moves from solo authorship to team production. Teams are formed right after the midterm. Students bring their own software into the shared pipeline, agree on a team contract before any modeling begins, populate a world at scale, and connect it to real data — then each team writes a tutorial of its own on the workflow it discovered, since these paths are not documented anywhere yet.',
                 weeks: [
-                    ['Week 9', 'Bringing Your Own Tools', 'Move an asset out of Rhino, Revit, Blender, Maya, 3ds Max, or Unreal Engine and into Omniverse — then document what was lost in translation.'],
+                    ['Week 8/9', 'Bringing Your Own Tools', 'Move an asset out of Rhino, Revit, Blender, Maya, 3ds Max, or Unreal Engine and into Omniverse — then document what was lost in translation.'],
                     ['Week 10', 'Making It Survive', 'Repair, validate, and standardize incoming work with Asset Validator and Scene Optimizer so it can be trusted by your team.'],
                     ['Week 11', 'The Team Pipeline', 'Write your team\u2019s pipeline agreement before modeling begins — layer ownership, naming, units, and orientation. A graded deliverable.'],
                     ['Week 12', 'Populating the World', 'Point instancing, Surface Instancer, and Navigation Mesh — fill a world with density, variation, and movement without making it unopenable.'],
