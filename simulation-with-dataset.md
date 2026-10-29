@@ -83,14 +83,6 @@ START_AT  = 2.5                        # below this value the fan is off
 SPEED     = 60                         # how fast it spins for each unit of data
 ```
 
-The heart of the script is three lines: each hour becomes a keyframe, and the windier the hour, the further the blades turn before the next one.
-
-```python
-spin.Set(angle, hour * 24)                    # one keyframe per hour
-if value >= START_AT:
-    angle = angle + value * SPEED             # bigger value = faster spin
-```
-
 ## Part 4: Temperature colors the lights
 
 Paste `connect_room_lights_temperature.py` into the Script Editor. Set `ROOM` to the group that holds your lights, then click **Run**.
@@ -122,6 +114,8 @@ Press **Play**. The room now behaves according to the weather outside: a cold, c
 | 288 | Noon | 15 °C, wind 2.5 m/s | Starts turning slowly | Between blue and yellow |
 | 360 | 3 pm | 19 °C, wind 4.9 m/s | Fastest | Yellow, the warmest hour |
 | 456 | 7 pm | 17 °C, wind 1.7 m/s | Stops | Fading back toward blue |
+
+[Here](https://drive.google.com/file/d/15EUBuBPHdqXZOBC6uY_H2-PKMxf-UQee/view?usp=sharing) is how the Demo looks like
 
 Now switch seasons: change `DATA_FILE` to `wind_june.csv` and `temperature_june.csv` in the two scripts and run them again. The summer room glows orange to red all day, and the fan runs from late morning well into the evening.
 
