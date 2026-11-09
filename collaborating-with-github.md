@@ -26,43 +26,41 @@ group01-project/
 
 ## What you need
 
-- A **GitHub account**. Sign up at [github.com](https://github.com) with your ASU email.
+- A **GitHub account**. Sign up at [github.com](https://github.com).
 - **GitHub Desktop**, from [desktop.github.com](https://desktop.github.com). Sign in with your GitHub account after installing.
-- **USD Composer**, the Omniverse app you already use in class.
-- The **starter kit** from your instructor (`starter-kit.zip`).
-
-**Roles:** one person in each group is the **group lead**. The lead does Part 1. Everyone does Part 2 onwards.
+- **USD Composer**
+- The **starter kit** [Here](https://drive.google.com/drive/folders/1odZC546ME-vLKBdWPd2xTAy1YJsXquNz?usp=sharing).
 
 ---
 
-## Part 1: Create the repository (group lead only)
+## Part 1: Create the repository
 
 ### Step 1: Create the repository on GitHub
 
 1. Go to [github.com](https://github.com) and click **New** (or the **+** menu at the top right → **New repository**).
 2. Fill in:
-   - **Owner:** the class organization (for example `ASU-IXD`), if your instructor has added you to it. Otherwise, your own account.
+   - **Owner:** the class organization
    - **Repository name:** your group's name, for example `group01-project`. Use lowercase letters and dashes only.
-   - **Visibility:** **Private**.
+   - **Visibility:**
    - Tick **Add a README file**.
 3. Click **Create repository**.
 
 ### Step 2: Invite your group
 
 1. In the new repository, open **Settings → Collaborators** (called **Collaborators and teams** in an organization).
-2. Click **Add people** and add each teammate's GitHub username, plus your instructor. Give them **Write** access if asked.
+2. Click **Add people** and add each teammate's GitHub username. Give them **Write** access.
 3. Teammates get an email invitation and must click **Accept** before they can work.
 
 ### Step 3: Copy the repository to your computer
 
 1. Open **GitHub Desktop**.
-2. **File → Clone repository**, choose your new repository from the list, and set the **Local path**. Use a short path without spaces, for example `C:\omniverse\projects\group01-project`.
+2. **File → Clone repository**, choose your new repository from the list, and set the **Local path**.
 3. Click **Clone**.
 
 ### Step 4: Add the starter kit
 
 1. Unzip **`starter-kit.zip`**.
-2. Copy **everything inside it** into your repository folder: `.gitattributes`, `.gitignore`, `README.md` (replace the existing one), and the folders `layers`, `assets`, `data` and `scripts`.
+2. Copy **everything inside it** into your repository folder: `.gitattributes`, `.gitignore`, `README.md`, and the folders `layers`, `assets`, `data` and `scripts`.
 
    > `.gitattributes` and `.gitignore` start with a dot, so Windows may hide them. In File Explorer, turn on **View → Show → Hidden items** to check they were copied.
 
@@ -79,13 +77,13 @@ What the two settings files do:
 3. Open the **Layer** panel (**Window → Layer** if it isn't showing).
 4. For each person in the group, including yourself:
    - Click **Create Sublayer** in the Layer panel.
-   - Save it in the **`layers`** folder as **`[part]_[name].usda`**, for example `lighting_sam.usda`.
+   - Save it in the **`layers`** folder as **`[part]_[name].usda`**, for example `lighting_member1Name.usda`.
 5. You should now see `main.usda` at the top of the Layer panel, with one sublayer per person under it.
 6. **File → Save** to save `main.usda`.
 
 > **Check:** every file must be inside your repository folder. A layer saved anywhere else won't reach your teammates.
 
-### Step 6: Share it (your first commit and push)
+### Step 6: Share it
 
 1. Switch to **GitHub Desktop**. The left panel lists everything you added.
 2. If GitHub Desktop asks to **initialize Git LFS**, click **Initialize Git LFS**.
@@ -95,11 +93,9 @@ What the two settings files do:
 
 Open the repository on github.com and refresh. You should see `main.usda`, the `layers` folder with everyone's layer, and the other folders.
 
-**Part 1 is done.** Tell your group they can start.
-
 ---
 
-## Part 2: Join the project (everyone)
+## Part 2: Join the project
 
 ### Step 7: Accept the invitation and clone
 
@@ -111,8 +107,6 @@ Open the repository on github.com and refresh. You should see `main.usda`, the `
 
 1. In **USD Composer**, open **`main.usda`** from your repository folder.
 2. In the **Layer** panel, find **your** layer, the one with your name.
-
-**Part 2 is done.** You're ready to work.
 
 ---
 
@@ -182,16 +176,3 @@ Your teammates see your work the next time they pull.
 | GitHub refuses a file over 100 MB | GitHub's maximum file size | Reduce the model or texture size, or split it up |
 | A data script can't find its CSV | The script points to a folder outside the repository | Set the script's data path to your repository's `data` folder |
 
----
-
-## Reviewing the combined world
-
-To show the group's work in class, one computer **pulls the latest version** and opens `main.usda`, either in USD Composer or in the **USD Viewer streaming app**, so others can watch in a browser. Everyone's layers appear together as one world.
-
----
-
-## For instructors
-
-- **Make the starter kit a template repository.** Create one repository with the starter kit, then turn on **Settings → Template repository**. Groups can click **Use this template** to create their own copy, which replaces Steps 1 and 4.
-- **Storage limits.** GitHub blocks single files over 100 MB, and Git LFS storage and bandwidth are limited on free accounts. Check the class organization's LFS usage under **Settings → Billing** before deadlines, and check whether GitHub Education gives the organization more.
-- **A suggested class flow:** Part 1 as a live demo (about 20 minutes), then groups do Part 2 and one full loop of Part 3 together (about 30 minutes). End with each student pushing one small change and everyone pulling to see the combined world.
